@@ -1,24 +1,31 @@
-# Workspaces Eslint
+# ClassroomIO Documentation
 
-collection of all internal eslint configurations
+The help docs of classroomio in Next.js live on [https://classroomio.com/docs](https://classroomio.com/docs)
 
-## Configurations
+## Development
 
-### `next.js`
+### Local setup
 
-This is a custom ESLint configuration for use with Next.js apps. This config extends the Vercel Engineering Style Guide.
-For more information, see [https://github.com/vercel/style-guide](https://github.com/vercel/style-guide)
+1. Clone the repo
 
-### `react-internal.js`
+   ```bash
+   git clone https://github.com/rotimi-best/classroomio.git
+   ```
 
-This is a custom ESLint configuration for use with internal (bundled by their consumer) libraries that utilize React.
+2. Go to project folder
 
-This config extends the Vercel Engineering Style Guide. For more information, see [https://github.com/vercel/style-guide](https://github.com/vercel/style-guide)
+   ```bash
+   cd classroomio
+   ```
 
-### `library.js`
+3. Install the required dependencies
 
-This is a custom ESLint configuration for use with typescript packages. This config extends the Vercel Engineering Style Guide. For more information, see [https://github.com/vercel/style-guide](https://github.com/vercel/style-guide)
+   ```bash
+   pnpm i
+   ```
 
-### `svelte.js`
+4. Run (in development mode)
 
-something sweet
+   ```bash
+   pnpm dev --filter=docs
+   ```
